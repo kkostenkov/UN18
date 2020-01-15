@@ -15,7 +15,7 @@ public class Builder
                 .Where(x => x.enabled)
                 .Select(x => x.path)
                 .ToArray(),
-//            locationPathName = prefs.FullBuildPath
+            locationPathName = @"P:\Builds\UN18_ios"
         };
         var buildReport = BuildPipeline.BuildPlayer(buildOpts);
     }
